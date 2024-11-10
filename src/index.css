@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+    background: linear-gradient(#7f38ca, #386B4C);
+    height: 100vh;
+    width:100vw;
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    color:  white;
+}
+
+.todo{
+    width:max(530px, 40vw);
+    background-color:#000101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    flex-direction: column;
+    gap:10px
+}
+.top{
+    width:480px;
+    height:50px;
+    background-color: #5a4747;
+    display: flex;
+    align-items: center;
+    padding:5px;
+    gap:5px;
+}
+
+.t1{
+    width:300px;
+    height:90%;
+    border:1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    width:170px;
+    height:90%;
+    border:1px solid;
+}
+
+.main{
+    height:80vh;
+    background-color: #525050;
+    width:480px;
+    padding:5px;
+    padding: 10px;
+    background-color: rgb(75, 116, 75);
+}
+
+.mainBody{
+    border:1px solid;
+    width:max(80%, 480px);
+    height:580px;
+    background-color: darkblue;
+}
+
+.bottom{
+    width:450px;
+    height:30px;
+    background-color: #726f6f;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.enterValue{
+    width:300px;
+    height:90%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.setTime{
+    width:100px;
+    height:90%;
+    display: flex;
+    align-items: center;    
+}
+.valuefield{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+select{
+    width:100px;
+    background-color: white;
+    border-radius: 0;
+}
+.enter{
+    width:160px;
+    border:1px solid;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    margin:10px;
+    height:100vh;
+    border: 1px solid;
+    height:70vh;
 }
