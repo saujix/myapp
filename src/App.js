@@ -25,12 +25,6 @@ export function Time(){
 
 
 export function List() {
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-            // Your code here when Enter is pressed
-            addItem();
-        }
-    });
 
     let [arrayList, setArrayList] = useState([]);
 
@@ -41,6 +35,12 @@ export function List() {
              
         document.querySelector('.valuefield').value ='';
     };
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            addItem();
+        }
+    });
 
     let text;
     return (
@@ -60,11 +60,10 @@ export function List() {
                 </div>
                 <div className='enter' onClick={addItem}>
                     Add
-                </div>
-               
+                </div>  
             </div>
         </div>
     );
-
+    
     
 }
