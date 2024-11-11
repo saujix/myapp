@@ -49,7 +49,7 @@ export function List() {
                 {arrayList.map((item, index) => (
                         <div className='containerList' id={`item-${index}`} key={index}>
                             <input className='value' placeholder={item.value}></input>
-                            <button className='remove' onClick={() => {setArrayList(arrayList = arrayList.splice(0, index).concat(arrayList.splice(index + 1))) }}>Delete</button>
+                            <button className='remove' onClick={() => {setArrayList(arrayList = arrayList.slice(0, index).concat(arrayList.slice(index + 1))) }}>Delete</button>
                         </div>
                 ))}
             </div>
